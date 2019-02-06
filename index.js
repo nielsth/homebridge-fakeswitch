@@ -47,11 +47,11 @@ FakeSwitch.prototype._setOn = function(on, callback) {
   if (on && !this.reverse && !this.stateful) {
     setTimeout(function() {
       this._service.setCharacteristic(Characteristic.On, false);
-    }.bind(this), 1000);
+    }.bind(this), 3000);
   } else if (!on && this.reverse && !this.stateful) {
     setTimeout(function() {
       this._service.setCharacteristic(Characteristic.On, true);
-    }.bind(this), 1000);
+    }.bind(this), 3000);
   }
   
   if (this.stateful) {
