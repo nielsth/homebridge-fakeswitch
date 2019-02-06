@@ -1,4 +1,4 @@
-# "Dummy Switches" Plugin
+# "Dummy Switches" Plugin van Niels
 
 Example config.json:
 
